@@ -1,0 +1,9 @@
+
+# Virtualenv
+.venv
+
+# IDE
+.idea
+
+# Project related
+PythonIntro/log_file.txt
