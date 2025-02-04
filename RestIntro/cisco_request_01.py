@@ -1,4 +1,5 @@
 import requests
+import urllib
 
 def request_get(endpoint):
     base_url = 'https://10.202.10.254'
@@ -32,6 +33,13 @@ if __name__ == '__main__':
     # Again get information about the interfaces but this time with a different
     # YANG definition.
     endpoint = '/restconf/data/ietf-interfaces:interfaces'
+    repsonse = request_get(endpoint)
+
+    # Again get information about a specific interface with the problem of '/' being in the
+    # interface name. Thus we need to use escapes. Here, the quote function of urllib.parse helps us.
+    # https://docs.python.org/3/library/urllib.parse.html
+    interface_in_url = urllib.parse.quote("GigabitEthernet0/0/0", safe='=')
+    endpoint = f'/restconf/data/ietf-interfaces:interfaces/interface={interface_in_url}'
     repsonse = request_get(endpoint)
 
     # Get information about the implemented YANG-types
