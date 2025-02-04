@@ -1,0 +1,41 @@
+{
+  "Cisco-IOS-XE-native:interface": {
+    "GigabitEthernet": [
+      {
+        "name": "0/0/0",
+        "ip": {
+          "address": {
+            "primary": {
+              "address": "10.202.10.254",
+              "mask": "255.255.255.0"
+            }
+          }
+        },
+        "Cisco-IOS-XE-ethernet:negotiation": {
+          "auto": true
+        }
+      },
+      {
+        "name": "0/0/1",
+        "shutdown": [null],
+        "Cisco-IOS-XE-ethernet:negotiation": {
+          "auto": true
+        }
+      },
+      {
+        "name": "0/0/2",
+        "shutdown": [null],
+        "Cisco-IOS-XE-ethernet:negotiation": {
+          "auto": true
+        }
+      },
+      {
+        "name": "0/0/3",
+        "shutdown": [null],
+        "Cisco-IOS-XE-ethernet:negotiation": {
+          "auto": true
+        }
+      }
+    ]
+  }
+}
