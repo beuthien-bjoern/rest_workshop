@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Anna Schmidt",
+    "vorname": "Anna",
+    "nachname": "Schmidt",
+    "geburtsdatum": "1992-04-18",
+    "adresse": {
+      "strasse": "Am grünen Hang",
+      "hausnummer": "17",
+      "plz": "81679",
+      "ort": "München"
+    },
+    "kontaktdaten": {
+      "telefon": "0891234567",
+      "email": "anna.schmidt@example.com"
+    }
+  },
+  {
+    "name": "David Meier",
+    "vorname": "David",
+    "nachname": "Meier",
+    "geburtsdatum": "1985-11-05",
+    "adresse": {
+      "strasse": "Seestraße",
+      "hausnummer": "23",
+      "plz": "22767",
+      "ort": "Hamburg"
+    },
+    "kontaktdaten": {
+      "telefon": "0409876543",
+      "email": "david.meier@example.com"
+    }
+  }
+]

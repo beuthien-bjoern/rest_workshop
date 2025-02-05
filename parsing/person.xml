@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personen>
+  <person>
+    <name>Anna Schmidt</name>
+    <vorname>Anna</vorname>
+    <nachname>Schmidt</nachname>
+    <geburtsdatum>1992-04-18</geburtsdatum>
+    <adresse>
+      <strasse>Am grünen Hang</strasse>
+      <hausnummer>17</hausnummer>
+      <plz>81679</plz>
+      <ort>München</ort>
+    </adresse>
+    <kontaktdaten>
+      <telefon>0891234567</telefon>
+      <email>anna.schmidt@example.com</email>
+    </kontaktdaten>
+  </person>
+  <person>
+    <name>David Meier</name>
+    <vorname>David</vorname>
+    <nachname>Meier</nachname>
+    <geburtsdatum>1985-11-05</geburtsdatum>
+    <adresse>
+      <strasse>Seestraße</strasse>
+      <hausnummer>23</hausnummer>
+      <plz>22767</plz>
+      <ort>Hamburg</ort>
+    </adresse>
+    <kontaktdaten>
+      <telefon>0409876543</telefon>
+      <email>david.meier@example.com</email>
+    </kontaktdaten>
+  </person>
+</personen>
