@@ -14,6 +14,9 @@ for person in root.findall('person'):
         address = person.find('adresse')
         print(address.find('strasse').text)
         address.find('strasse').text = 'Neue Strasse'
+        element = ET.Element('updated')
+        element.text = 'yes'
+        person.append(element)
     if person.find('vorname').text == 'David':
         root.remove(person)
 
