@@ -20,6 +20,10 @@ def request_get(endpoint):
     return response
 
 if __name__ == '__main__':
+    # Discover the root of the RESTCONF API, see https://datatracker.ietf.org/doc/html/rfc8040#section-3.1
+    # After discovering the RESTCONF API root, the client MUST use this
+    # value as the initial part of the path in the request URI, in any
+    # subsequent request for a RESTCONF resource.
     endpoint = '/.well-known/host-meta'
     response = request_get(endpoint)
 
