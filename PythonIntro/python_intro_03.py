@@ -33,7 +33,7 @@ def read_subnet_assignment(assignment_csv_file_name: str) -> dict[str, str]:
         for row in assignments_reader:
             # A row is a list of string values that were separated in the file by the delimiter
             if line_count == 0:
-                print(f"Reading assignment file with columns {", ".join(row)}...")
+                print(f"Reading assignment file with columns {', '.join(row)}...")
             else:
                 # The assignments are stored in the dict. The key is the department, the value is the subnet
                 assignments[row[0]] = row[1]
@@ -67,7 +67,7 @@ def set_host_from_subnet(subnet_address: str, new_host_index: int) -> str:
     return host_address
 
 if __name__ == "__main__":
-    subnet_assignments = read_subnet_assignment("files/department_to_subnet.csv")
+    subnet_assignments = read_subnet_assignment("C:/Users/Philipp/Development/Fobi REST/rest_workshop/PythonIntro/files/department_to_subnet.csv")
     # Print assignments to console
     for key in subnet_assignments.keys():
         print(f"{key}: {subnet_assignments[key]}")
