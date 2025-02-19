@@ -44,7 +44,7 @@ def check_valid_ip_address(ip_address_to_check: str) -> bool:
             # Use of an f-string where a variable can be used inside a string
             print(f"Error: {error}\nEach octet needs to be a number")
             return False
-    return False
+    return True
 
 # Run this part if the Python file is executed as a script using the command line.
 # The special variable __name__ that contains a string whose value depends on how the code is

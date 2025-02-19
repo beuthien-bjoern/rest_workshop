@@ -2,7 +2,7 @@ import requests
 import urllib
 
 def request_get(endpoint):
-    base_url = 'https://10.202.10.254'
+    base_url = 'https://10.214.13.254'
     headers = {
         'Content-Type': 'application/yang-data+json',
         'Accept': 'application/yang-data+json'
